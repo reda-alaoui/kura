@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2019, 2020 Eurotech and/or its affiliates and others
+ * Copyright (c) 2019, 2024 Eurotech and/or its affiliates and others
  
  * This program and the accompanying materials are made
  * available under the terms of the Eclipse Public License 2.0
@@ -15,9 +15,9 @@ package org.eclipse.kura.jetty.customizer;
 import java.io.IOException;
 import java.io.Writer;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.eclipse.jetty.server.handler.ErrorHandler;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 public class KuraErrorHandler extends ErrorHandler {
 
@@ -26,4 +26,5 @@ public class KuraErrorHandler extends ErrorHandler {
             boolean showStacks) throws IOException {
         // Not needed
     }
+
 }
